@@ -31,7 +31,25 @@ html{
 }
 
 section{
-    padding: 2.5rem 9%;
+    padding:2rem 9%;
+}
+
+/* booknowcss */
+.heading{
+text-align: center;
+padding: 2.5rem 0;
+}
+
+.heading span{
+    font-size: 3.5rem;
+    background: rgba(255,165,0,.2);
+    color: var(--orange);
+    border-radius:.5rem;
+    padding: .2rem 1rem;
+    
+}
+.heading span.space{
+    background: none;
 }
 
 
@@ -273,12 +291,45 @@ header .search-bar-container label:hover{
     padding: .5rem;
   
 }
+/* ################# */
+.home .video-container video{
+    position: absolute;
+    top: 0;left: 0;
+    z-index: -1;
+    height: 100%;
+    width: 100%;
+    object-fit:cover;
+}
+.home .controls{
+    padding: 1rem;
+    border-radius: 5rem;
+    background: rgba(0,0,0,.7);
+    position: relative;
+    top: 10rem;
+}
+
+.home .controls .vid-btn{
+    height: 2rem;
+    width: 2rem;
+    display: inline-block;
+    border-radius: 50%;
+    background: #fff;
+    cursor: pointer;
+    margin:0.5rem;
+}
+.home .controls .vid-btn.active{
+    background: var(--orange);
+}
+/* ################# */
 
 
 
 
 
- /* media query */
+
+
+
+                                           /* media query    */
  @media (max-width:1200px){
     html{
     font-size:55%;
@@ -291,7 +342,12 @@ header .search-bar-container label:hover{
     header{
       padding: 2rem;  
     }
+
+      section{
+      padding: 2rem;  
+    }
   }
+
 
 
     @media (max-width:768px){
@@ -330,8 +386,10 @@ header .search-bar-container label:hover{
 
   @media (max-width:450px){
     html{
-    font-size:50%;
-   
+    font-size:50%; 
+}
+.heading span{
+    font-size: 2.5rem;
 }
 
  }
