@@ -54,7 +54,29 @@ videoBtn.forEach(btn =>{
     });
 });
 
- var swiper = new swiper(".review-slider", {
+//  var swiper = new swiper(".review-slider", {
+//     spaceBetween:20,
+//     loop:true,
+//  }); 
+  var swiper = new Swiper(".review-slider", {
     spaceBetween:20,
-    loop:true,
- }); 
+    loop: true,
+    grabCursor: true,
+     autoplay:{
+        delay:2500,
+        disableOnInteraction:false,
+     },
+     breakpoints:{
+        640:{
+            slidesPerView:1,
+        },
+        768:{
+           slidesPerView:2, 
+        },
+        1024:{
+            slidesPerView:3,
+        },
+     },
+
+
+  });
