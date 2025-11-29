@@ -10,6 +10,10 @@ let videoBtn = document.querySelectorAll('.vid-btn');
 
 
 
+
+
+
+
 window.onscroll =()=>{
       searchBtn.classList.remove('fa-times');
       searchBar.classList.remove('active');
@@ -59,6 +63,8 @@ videoBtn.forEach(btn =>{
 //     loop:true,
 //  }); 
 
+
+
  var swiper = new Swiper(".review-slider", {
     spaceBetween:20,
     loop: true,
@@ -90,12 +96,12 @@ videoBtn.forEach(btn =>{
 
 
   var swiper = new Swiper(".brand-slider", {
-    spaceBetween:20,
-    loop: true,
-    grabCursor: true,
+    spaceBetween: 20,
+    loop:true,
+   //  grabCursor: true,
      autoplay:{
-        delay:2500,
-        disableOnInteraction:false,
+        delay: 2500,
+        disableOnInteraction: false,
      },
      breakpoints:{
         450:{
