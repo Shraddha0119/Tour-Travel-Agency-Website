@@ -633,42 +633,58 @@ width: 100%;
     background:#333
 }
 
-.footer box-container{
+.footer .box-container{
     display:flex;
     flex-wrap: wrap;
     gap: 1.5rem;
 }
 
-.footer box-container .box{
+.footer .box-container .box{
     padding:1rem 0;
     flex:1 1 25rem;
 
 }
 
-.footer box-container .box h3{
+.footer .box-container .box h3{
     font-size: 2.5rem;
     padding: .7rem;
     color: #fff;
 }
 
-.footer box-container .box p{
+.footer .box-container .box p{
     font-size: 1.5rem;
     padding: .7rem;
     color: #eee;
 }
 
 
-.footer box-container .box a{
+.footer .box-container .box a{
     display: block;
     font-size: 1.5rem;
     padding: .7rem;
     color: #fff;
 }
 
-.footer box-container .box a:hover{
+.footer .box-container .box a:hover{
     color: var(--orange);
     text-decoration: underline;
 }
+
+.footer .credit{
+    text-align: center;
+    padding: 2rem 1rem;
+    margin-top: 1rem;
+    font-size: 2rem;
+    font-weight: normal;
+    color: #fff;
+    border-top:  .1rem solid rgba(255,255,255,.2);
+}
+
+.footer .credit span{
+    color: var(--orange);
+}
+
+
 
 
 /* ################# */
@@ -681,6 +697,8 @@ width: 100%;
 
 
                                            /* media query    */
+
+                                           
  @media (max-width:1200px){
     html{
     font-size:55%;
@@ -691,17 +709,17 @@ width: 100%;
 
   @media (max-width:991px){
     header{
-      padding: 2rem;  
+      padding:2rem;  
     }
 
-      section{
-      padding: 2rem;  
+    section{
+      padding:2rem;  
     }
   }
 
 
 
-    @media (max-width:768px){
+ @media (max-width:768px){
   #menu-bar{
     display: initial;
   }
@@ -719,8 +737,8 @@ width: 100%;
 
 
 
-   header .navbar.active{
-    clip-path: polygon(0 0,100% 0,100% 100%, 0 100%);
+   header .navbar .active{
+    clip-path: polygon(0 0,100% 0,100% 100%, 0 0);
    }
 
 
@@ -739,7 +757,7 @@ width: 100%;
 
 
   @media (max-width:450px){
-    html{
+  html{
     font-size: 50%; 
   }
   .heading span{
