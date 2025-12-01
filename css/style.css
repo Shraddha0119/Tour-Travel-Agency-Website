@@ -509,6 +509,9 @@ width: 100%;
 
 /* review css */
 
+
+
+
 .review .review-slider{
     padding-bottom: 2rem;
 }
@@ -547,7 +550,11 @@ width: 100%;
     
 }
 
+
+
+
 /* contact css */
+
 
 .contact .row{
     display: flex;
