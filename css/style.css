@@ -162,6 +162,8 @@ header .search-bar-container label:hover{
     color: var(--orange);
 }
 
+
+/* logincss */
  .login-form-container{
     position:fixed;
     top:-120%;left: 0;
@@ -265,6 +267,9 @@ header .search-bar-container label:hover{
  body{
    height: 300rem; 
  } */
+
+
+ /* home-css */
 .home{
    min-height: 100vh;
    display: flex; 
