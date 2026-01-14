@@ -21,12 +21,22 @@
     color: #fff;
 }
 
+img{
+  max-width:100%;
+  height:auto;
+}
+body{
+  overflow-x: hidden;
+}
+
+
+
 
 
 html{
     font-size: 62.5%;
     overflow-x:hidden;
-    scroll-padding-top: 6rem;
+    scroll-padding-top: 8rem;
     scroll-behavior: smooth;
 }
 
@@ -727,6 +737,22 @@ width: 100%;
     section{
       padding:2rem;  
     }
+
+     .footer{
+    padding: 3rem 2rem;
+  }
+
+  .footer .box-container{
+    gap: 2rem;
+  }
+
+  .footer .box-container .box{
+    flex: 1 1 45%;
+  }
+
+  .footer .box-container .box h3{
+    font-size: 2.2rem;
+  }
   }
 
 
@@ -735,7 +761,6 @@ width: 100%;
   #menu-bar{
     display: initial;
   }
-
 
   header .navbar{
     position: absolute;
@@ -747,13 +772,10 @@ width: 100%;
 
   }
 
-
-
-   header .navbar .active{
-    clip-path: polygon(0 0,100% 0,100% 100%, 0 0);
+   header .navbar.active{
+    /* clip-path: polygon(0 0,100% 0,100% 100%, 0 0); */
+    clip-path: polygon(0 0,100% 0,100% 100%, 0 100%);
    }
-
-
 
   header .navbar a{
     display: block;
@@ -763,12 +785,35 @@ width: 100%;
     background: #222;
   }
 
+   .footer{
+    text-align: center;
+  }
+
+  .footer .box-container{
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+
+  .footer .box-container .box{
+    flex: 1 1 100%;
+  }
+
+  .footer .box-container .box a{
+    padding: .5rem 0;
+  }
+
+  .footer .credit{
+    font-size: 1.6rem;
+  }
+
  }
 
 
 
 
-  @media (max-width:450px){
+  
+
+@media (max-width:450px){
   html{
     font-size: 50%; 
   }
@@ -781,7 +826,23 @@ width: 100%;
 
   }
 
- }
+   .footer .box-container .box h3{
+    font-size: 2rem;
+  }
+
+  .footer .box-container .box p,
+  .footer .box-container .box a{
+    font-size: 1.4rem;
+  }
+
+  .footer .credit{
+    font-size: 1.4rem;
+  }
+
+}
+
+
+
 
 
      

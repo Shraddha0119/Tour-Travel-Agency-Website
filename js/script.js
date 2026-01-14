@@ -6,6 +6,8 @@ let formClose= document.querySelector('#form-close');
 let menu = document.querySelector('#menu-bar');
 let navbar = document.querySelector('.navbar');
 let videoBtn = document.querySelectorAll('.vid-btn');
+let bookings = JSON.parse(localStorage.getItem("bookings")) || [];
+
 
 
 
@@ -62,6 +64,57 @@ videoBtn.forEach(btn =>{
 //     spaceBetween:20,
 //     loop:true,
 //  }); 
+
+// booking stored//
+document.querySelector("#book-form").addEventListener("submit", function(e){
+  e.preventDefault();
+
+  const data = {
+    destination: this.destination.value,
+    guests: this.guests.value,
+    arrival: this.arrival.value,
+    leaving: this.leaving.value
+  };
+
+  let bookings = JSON.parse(localStorage.getItem("bookings")) || [];
+  bookings.push(data);
+  localStorage.setItem("bookings", JSON.stringify(bookings));
+
+  alert("Booking Saved Successfully!");
+  this.reset();
+
+  console.log("All bookings:", bookings);
+});
+
+
+// contact//
+// Contact form submit handler
+document.querySelector("#contact-form").addEventListener("submit", function(e){
+  e.preventDefault();
+
+  const contactData = {
+    name: this.name.value,
+    email: this.email.value,
+    message: this.message.value
+  };
+
+  // Get existing contacts or empty array
+  let contacts = JSON.parse(localStorage.getItem("contacts")) || [];
+  contacts.push(contactData);
+
+  // Save back to localStorage
+  localStorage.setItem("contacts", JSON.stringify(contacts));
+
+  alert("Message Sent Successfully!");
+  this.reset();
+
+  console.log("All contacts:", JSON.parse(localStorage.getItem("contacts")));
+});
+
+
+
+
+
 
 
 

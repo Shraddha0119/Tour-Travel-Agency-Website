@@ -62,7 +62,7 @@
 
     <div class="login-form-container">
 
-        <i class="fas fa-time" id="form-close"></i>
+        <i class="fas fa-times" id="form-close"></i>
 
 
 
@@ -133,10 +133,10 @@
     <div class="row">
 
         <div class="image">
-            <img src="./imgvideo/main1.img">
+            <img src="./imgvideo/main1.jpg">
         </div>
 
-        <form action="">
+        <!-- <form id="book-form">
             <div class="inputBox">
                 <h3>where to</h3>
                 <input type="text" placeholder="place name">
@@ -157,7 +157,32 @@
                 <input type="date" >
             </div>
             <input type="submit" class="btn" value="Book Now">
-        </form>
+        </form> -->
+
+        <form id="book-form">
+  <div class="inputBox">
+    <h3>Destination</h3>
+    <input type="text" name="destination" placeholder="Place name" required>
+  </div>
+
+  <div class="inputBox">
+    <h3>Number of Guests</h3>
+    <input type="number" name="guests" placeholder="Number of guests" required>
+  </div>
+
+  <div class="inputBox">
+    <h3>Arrival</h3>
+    <input type="date" name="arrival" required>
+  </div>
+
+  <div class="inputBox">
+    <h3>Leaving</h3>
+    <input type="date" name="leaving" required>
+  </div>
+
+  <input type="submit" class="btn" value="Book Now">
+</form>
+
 
 
 
@@ -172,7 +197,7 @@
 
 <!-- packages section stars -->
 
-<section class="packages" id="packages">
+<section class="packages" id="package">
       <h1 class="heading">
         <span>P</span>
         <span>a</span>
@@ -189,10 +214,10 @@
     <div class="box-container">
 
      <div class="box">
-        <img src="./imgvideo/mumbai.img">
+        <img src="./imgvideo/mumbai.jpg">
         <div class="content">
             <h3><i class="fas fa-map-marker-alt"></i>mumbai</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi eum a non neque deserunt sit, sequi velit eveniet modi, laboriosam sapiente doloremque eos magni repellendus nostrum delectus eaque. Omnis, eligendi?</p>
+            <p>Mumbai is the financial capital of India, famous for Marine Drive, Bollywood, Gateway of India, and its vibrant culture and street food.</p>
             <div class="stars">
                 <i class="fas fa-star"></i>
                 <i class="fas fa-star"></i>
@@ -211,7 +236,7 @@
         <img src="./imgvideo/sydney.ing.jpg">
         <div class="content">
             <h3><i class="fas fa-map-marker-alt"></i>Sydney</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi eum a non neque deserunt sit, sequi velit eveniet modi, laboriosam sapiente doloremque eos magni repellendus nostrum delectus eaque. Omnis, eligendi?</p>
+            <p>Sydney, Australia’s largest city, is famous for its stunning Opera House, Harbour Bridge, beautiful beaches like Bondi, and vibrant cultural scene.</p>
             <div class="stars">
                 <i class="fas fa-star"></i>
                 <i class="fas fa-star"></i>
@@ -227,10 +252,10 @@
 
 
       <div class="box">
-        <img src="./imgvideo/hawaii.img">
+        <img src="./imgvideo/hawaii.jpg">
         <div class="content">
             <h3><i class="fas fa-map-marker-alt"></i>hawaii</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi eum a non neque deserunt sit, sequi velit eveniet modi, laboriosam sapiente doloremque eos magni repellendus nostrum delectus eaque. Omnis, eligendi?</p>
+            <p>Hawaii, a tropical paradise in the Pacific Ocean, is known for its stunning beaches, volcanoes, lush landscapes, surfing spots, and rich Polynesian culture.</p>
             <div class="stars">
                 <i class="fas fa-star"></i>
                 <i class="fas fa-star"></i>
@@ -246,10 +271,10 @@
 
 
            <div class="box">
-        <img src="./imgvideo/paris.img">
+        <img src="./imgvideo/paris.jpg">
         <div class="content">
             <h3><i class="fas fa-map-marker-alt"></i>Paris</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi eum a non neque deserunt sit, sequi velit eveniet modi, laboriosam sapiente doloremque eos magni repellendus nostrum delectus eaque. Omnis, eligendi?</p>
+            <p>Paris, the capital of France, is famous for its romantic ambiance, iconic Eiffel Tower, world-class art museums like the Louvre, historic architecture, and exquisite cuisine.</p>
             <div class="stars">
                 <i class="fas fa-star"></i>
                 <i class="fas fa-star"></i>
@@ -265,10 +290,10 @@
 
 
            <div class="box">
-        <img src="./imgvideo/tokyo.img">
+        <img src="./imgvideo/tokyo.jpg">
         <div class="content">
             <h3><i class="fas fa-map-marker-alt"></i>Tokyo</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi eum a non neque deserunt sit, sequi velit eveniet modi, laboriosam sapiente doloremque eos magni repellendus nostrum delectus eaque. Omnis, eligendi?</p>
+            <p>Tokyo, the capital of Japan, is a bustling metropolis blending ultra-modern skyscrapers with traditional temples. It's known for its vibrant culture, sushi cuisine, advanced technology, and lively neighborhoods like Shibuya and Shinjuku.</p>
             <div class="stars">
                 <i class="fas fa-star"></i>
                 <i class="fas fa-star"></i>
@@ -283,10 +308,10 @@
 
 
            <div class="box">
-        <img src="./imgvideo/egypt.img">
+        <img src="./imgvideo/egypt.jpg">
         <div class="content">
             <h3><i class="fas fa-map-marker-alt"></i>Egypt</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi eum a non neque deserunt sit, sequi velit eveniet modi, laboriosam sapiente doloremque eos magni repellendus nostrum delectus eaque. Omnis, eligendi?</p>
+            <p>Egypt, a country linking northeast Africa with the Middle East, is famous for its ancient civilization and monumental treasures like the Pyramids of Giza, the Sphinx, and the Nile River. It offers rich history, culture, and desert landscapes.</p>
             <div class="stars">
                 <i class="fas fa-star"></i>
                 <i class="fas fa-star"></i>
@@ -298,14 +323,6 @@
             <a href="#" class="btn"> book now</a>
         </div>
       </div>
-
-
-
-
-
-
-
-
 
 
     </div>
@@ -336,43 +353,43 @@
      <div class="box">
         <i class="fas fa-hotel"></i>
         <h3>affordable hotels</h3>
-        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tenetur, eius? Minima temporibus unde, vero dolorum ad provident sunt vel ipsum assumenda sed modi. Tempore libero placeat vero deleniti quo labore.</p>
+        <p>Discover a range of affordable hotels with comfort and convenience, ensuring your stay is pleasant without breaking the budget. Perfect for travelers seeking quality on a budget.</p>
      </div>
 
       <div class="box">
         <i class="fas fa-utensils"></i>
         <h3>food and drinks</h3>
-        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tenetur, eius? Minima temporibus unde, vero dolorum ad provident sunt vel ipsum assumenda sed modi. Tempore libero placeat vero deleniti quo labore.</p>
+        <p>Enjoy a variety of delicious food and refreshing drinks during your stay. From local cuisines to international flavors, satisfy your cravings at affordable prices.</p>
      </div>
 
       <div class="box">
         <i class="fas fa-bullhorn"></i>
-        <h3>safety guide</h3>
-        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tenetur, eius? Minima temporibus unde, vero dolorum ad provident sunt vel ipsum assumenda sed modi. Tempore libero placeat vero deleniti quo labore.</p>
+        <h3>Safety guide</h3>
+        <p>Stay informed and protected with our comprehensive safety guide. Tips and guidelines to ensure a safe and worry-free travel experience.</p>
      </div>
 
         <div class="box">
         <i class="fas fa-globe-asia"></i>
-        <h3>around the world</h3>
-        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tenetur, eius? Minima temporibus unde, vero dolorum ad provident sunt vel ipsum assumenda sed modi. Tempore libero placeat vero deleniti quo labore.</p>
+        <h3>Around the world</h3>
+        <p>Explore destinations across the globe with our curated travel guides and tips for every corner of the world.Discover exciting destinations and unique experiences across the globe.</p>
      </div>
 
-        <div class="box">
+        <!-- <div class="box">
         <i class="fas fa-bullhorn"></i>
-        <h3>safety guide</h3>
-        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tenetur, eius? Minima temporibus unde, vero dolorum ad provident sunt vel ipsum assumenda sed modi. Tempore libero placeat vero deleniti quo labore.</p>
-     </div>
+        <h3>Safety guide</h3>
+        <p>Get tips and guidelines to ensure a safe and worry-free travel experience wherever you go.Get tips and guidelines to ensure a safe and worry-free travel experience.</p>
+     </div> -->
 
         <div class="box">
         <i class="fas fa-plane"></i>
-        <h3>fastest travel</h3>
-        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tenetur, eius? Minima temporibus unde, vero dolorum ad provident sunt vel ipsum assumenda sed modi. Tempore libero placeat vero deleniti quo labore.</p>
+        <h3>Fastest travel</h3>
+        <p>Learn how to travel efficiently with tips on quick routes and time-saving methods.Learn how to travel efficiently with tips on quick routes and time-saving methods.</p>
      </div>
 
         <div class="box">
         <i class="fas fa-hiking"></i>
-        <h3>adventures</h3>
-        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tenetur, eius? Minima temporibus unde, vero dolorum ad provident sunt vel ipsum assumenda sed modi. Tempore libero placeat vero deleniti quo labore.</p>
+        <h3>Adventures</h3>
+        <p>Embark on thrilling adventures and unforgettable experiences From mountain treks to deep-sea diving, experienceadrenaline-pumping activities that create lifelong memories.</p>
      </div>
     </div>
  </section>
@@ -582,7 +599,7 @@
             <img src="./imgvideo/contact.jpg">
         </div>
 
-        <form action="">
+        <!-- <form action="">
             <div class="inputBox">
                 <input type="text" placeholder="name">
                 <input type="email" placeholder="email">
@@ -596,7 +613,20 @@
             <textarea  placeholder="message" id="" cols="30" rows="10"></textarea>
             <input type="submit" class="btn" value="send message">
 
-        </form>
+        </form> -->
+  <form id="contact-form">
+  <div class="inputBox">
+    <input type="text" name="name" placeholder="Your Name" required>
+  </div>
+  <div class="inputBox">
+    <input type="email" name="email" placeholder="Your Email" required>
+  </div>
+  <div class="inputBox">
+    <textarea name="message" placeholder="Your Message" required></textarea>
+  </div>
+  <input type="submit" value="Send Message" class="btn">
+</form>
+
     </div>
 
 </section>
@@ -667,7 +697,7 @@
         </div>
     </div>
 
-    <h1 class="credit">created by  <span>Mis.web designer</span> |all rights reserved</h1>
+    <h1 class="credit">created by  <span>website designer</span> |all rights reserved</h1>
 
 </section>
 
